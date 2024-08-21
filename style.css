@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Tilt+Neon&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --jet:#34312D;
+    --black:#14110F;
+    --white:#F3F3F4;
+    --grey:#7E7F83;
+    --dun:#D9C5B2;
+    --top:#0b004e;
+    --mid:#1d152f;
+    --end:#002834;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Text","Open Sans", sans-serif;
+}
+
+.home{
+    
+    height: 465vh;
+    width: 100%;
+    background: linear-gradient(var(--top),#1d152f,#002834);;
+}
+
+.nav{
+    
+    position: fixed;
+    z-index: 19;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    height: 12vh;
+    width: 100%;
+    padding: 60px 60px;
+    background: transparent;
+    opacity: 0.95;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.nav h1{
+    position: relative;
+    font-size: 55px;
+    font-weight: 580;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+.nav i{
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.nav i:hover{
+    color: var(--dun);
+    transition: 0s;
+}
+.nav ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 25px;
+    transition: 0.6s;
+}
+
+.nav ul li{
+    margin: 0px 10px;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    transition: 0.6s;
+}
+.nav ul li:hover{
+    transition: 0s;
+    color: var(--dun);
+}
+#nav.sticky{
+    padding: 5px 60px;
+    background: var(--white);
+}
+#nav.sticky h1{
+    color: #0b004e;
+}
+#nav.sticky ul li{
+    color: var(--black);
+}
+#nav.sticky ul li:hover{
+    transition: 0s;
+    color: var(--dun);
+}
+#nav.sticky i{
+    color: var(--black);
+}
+#nav.sticky i:hover{
+    color: var(--dun);
+    transition: 0s;
+}
+.mid{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    background-size: cover;
+}
+.mid-right{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    padding-top: 25px;
+}
+.mid-right svg{
+    position: relative;
+    left: 0%;
+    top: 10px;
+}
+.mid-right img{
+    position: relative;
+    left: 35%;
+    top: -560px;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+.mid-left{
+    color: var(--white);
+    width: 50%;
+    padding: 280px 130px;
+}
+.mid-left h1{
+    letter-spacing: 0.02cm;
+    font-size: 50px;
+    font-weight: 800;
+}
+.mid-left h2{
+    font-weight: 500;
+}
+.mid-left p{
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.main{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    background-size: cover;
+    display: flex;
+}
+.main-right{
+    position: relative;
+    top: 150px;
+    left: 50%;
+    width: 50%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    
+}
+.main-right h1{
+    font-size: 45px;
+}
+.main-right p{
+    font-size: 18px;
+}
+.main-right h2{
+    font-size: 30px;
+}
+.main-right h3{
+    font-size: 20px;
+}
+.main-right i{
+    font-size: 30px;
+}
+.main li{
+    font-size: 17px;
+    list-style: none;
+}
+
+.car{
+    position: relative;
+    top: 100vh;
+    height: 80vh;
+}
+.car h1{
+    color: var(--white);
+    padding: 0px 80px;
+    padding-bottom: -80px;
+}
+.car h5{
+    color: var(--jet);
+}
+.car img{
+    position: relative;
+    left:25%;
+}
+.main-right button{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 20px;
+}
+.main-right button:hover{
+    color: var(--white);
+    background: var(--dun);
+}
+.acc{
+    position: relative;
+    top: 135vh;
+    
+}
+.acc h1{
+    color: var(--white);
+    padding-bottom: 20px;
+}
+.contact{
+    position: relative;
+    top: 150vh;
+    color: var(--white);
+}
+.contact h1{
+    font-size: 40px;
+    padding: 0px 38%;
+    margin-bottom: 40px;
+}
+.contact p{
+    font-size: 20px;
+    padding: 0px 19%;
+}
+.copy-container-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 47vh;
+    position: relative;
+    left: 38%;
+}
+.copy-container-number i{
+    font-size: 15px;
+}.copy-button-number {
+    font-size: 15px;
+    margin-left: 0px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  .copy-button-number:hover {
+    background-color: #218838;
+}
+.copy-container-mail {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45vh;
+    position: relative;
+    left: 36%;
+}
+.copy-button-mail {
+    font-size: 15px;
+    margin-left: 0px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.copy-button-mail:hover {
+    background-color: #218838;
+}
+
+
+.social{
+    font-size: 30px;
+    padding: 50px 38%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Set equal width */
+    height: 50px; /* Set equal height */
+    border-radius: 50%; /* Makes the element a circle */
+    background-color: var(--end); /* Background color */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline on links */
+    font-size: 24px; /* Icon size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.social a:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+
+
+
