@@ -21,10 +21,15 @@ tl.to(".image",{
   
 },"image")
 
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
+document.querySelectorAll('#nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
 function copyNumber() {
   var copyText = document.getElementById("copyNumber").innerText;
